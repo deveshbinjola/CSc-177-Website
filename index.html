@@ -3,70 +3,83 @@
 <meta charset="UTF-8">
 <title> CSc 177 Home Page </title>
 
-<center><h2>CSC 177 - Data Warehousing and Data Mining</h2></center>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<h2><div class="logo">CSC 177 - Data Warehousing and Data Mining</div></h2>
+<link rel="stylesheet" type="text/css" href="devesh.css">
+<script src="devesh.js"></script>
+
 </head>
 
 <body>
-<div class="tabs">
-    <ul class="tab-links">
-        <li class="active"><a href="http://athena.ecs.csus.edu/~binjolad/">Home Page</a></li>
-        <li><a href="proposal.htm">Research Paper/ Project Proposal</a></li>
+
+<header class ="navbar-inverse" role ="banner">
+<div class ="container">
+
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		 <li class="active"><a class="navbar-brand" href="index.html">Home</a></li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Presentations <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a href="proposal.htm">Research Paper/ Project Proposal</a></li>
         <li><a href="progress.htm">Progress Report</a></li>
         <li><a href="oralpresentation.htm">Oral Presentation</a></li>
 		<li><a href="finalpresentation.htm">Final Presentation & Report</a></li>
-        <li><a href="golf1.html">Golf Database</a></li>
-    </ul>
-</div>
+          </ul>
+        </li>
 
-<div class="tab-content">
-    <div id="tab1" class="tab active">
-        <h1>Team Members:<h1>
-		<div id="devesh"><img src="devesh.jpg" width="400px" height="400px" align="middle" style="border:10px solid white" >
-		  <p>
-	      <h1><b>Devesh Binjola</b></h1>
-		</p>
-		<p><u><a href="mailto: sunny.binjola@gmail.com">sunny.binjola@gmail.com</a></u></p>
-		<p align = "justify" ><b><u>About:</u></b>  Hi I am Devesh. I am doing my Bachelors in Computer Science here at Sac State. I enjoy programming and doing projects on the side. My other hobbies other than programming are entrepreneurship, sports, cars, etc. I like playing  and watching soccer, cricket, golf. My favorite soccer team is Arsenal. <a href= "Travel/travel.html"> Travel Website </a></p>							
-		<h3><b><u>Proficient:</u></b></h3>
-		<p align="left" > • C/C++ • Java • Python • SQL • HTML</p>
-        <h3><b><u>Knowledge of:</u></b></h3>
-		<p align="left" > • Verilog • Android Studio • Audio DSP • PHP</p>
-		<h3><b><u>Currently Learning/Interested to Learn:</u></b></h3>
-		<ul>
-		<li>ASP.NET</li>
-		<li>C#</li>
-        <li>Data Analytics</li>
-		</ul>
-		<h3><b><u>Career Goals:</u></b></h3>
-		<p>I am someone who tries to make short term goals. Currently I am trying to find Internships in the field of Computer Software Development/Testing and Computer Architecture. I want to see myself as an Entrepreneur after 10 - 15 years down the road.</p>
-        
-         <p>You can know more about my professional skills by looking at my <a target="_blank" href="DeveshBinjola_Resume.pdf"> Resume.</a> Feel free to contact me for any internship opportunities.</p>
-		
-		</div>
-		
-	<div id="nick">
-		<img src="nick.jpg" width="250px" height="400px" align="middle" style="border:10px solid white">
-							<p><h1><b>Nicklous Hanks</b></h1></p>
-							<p><u><a href="mailto: nhanks840@gmail.com">nhanks840@gmail.com</a></u></p>
-							<p align = "justify" ><b><u>About:</u></b>
-                             </p>							
-		<h3><b><u>Proficient:</u></b></h3>
-		<p align="left" > • C++ • Java • SQL </p>
-        <h3><b><u>Knowledge of:</u></b></h3>
-		<p align="left" > • Android • C • Python • VB • HTML • Linux • Windows • iOS • OS X</p>
-		<h3><b><u>Currently Learning/Interested to Learn:</u></b></h3>
-		<ul>
-		<li>.NET</li>
-		<li>PHP</li>
-        <li> I want to expand on Python, OS X, iOS, Android.</li>
-		</ul>
-		<h3><b><u>Career Goals:</u></b></h3>
-		<p> I am currently employed as a systems analyst for the State of California, but my goal is to design video games, either independently or with an established company such as EA, Activision, etc.
-        </p></div>
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Golf Database <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="golf1.html">Datamart</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="players.htm">Search Players</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="majors.html">Search Majors</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+  </header>
 
-</div>
-</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
 </html>
