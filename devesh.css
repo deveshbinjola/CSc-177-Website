@@ -1,5 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
+
+select {
+
+   width: 180px;
+   padding: 5px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 34px;
+}
+
+
+
 .logo{
     text-align: center;
     font-family: "Futura";
@@ -19,6 +31,10 @@
     font-size: 200%;
     padding: 10px 20px;
     font-family: "Futura";
+}
+
+.sub{
+    text-align: center;
 }
 
 .myPanel .body{
