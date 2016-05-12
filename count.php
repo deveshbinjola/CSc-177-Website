@@ -1,11 +1,13 @@
 <?php
 require_once 'cn.php';
 
-$major = ($_POST['major']);
+$major = ($_POST['major1']);
+$player = ($_POST['player2']);
 
-$sql = "SELECT Year, Player, Country, Par
+$sql = "SELECT Major, COUNT(Major) AS Count
 FROM Datamart
-WHERE Major ='$major'";
+WHERE Major ='$major' AND Player ='$player'";
+
 
 $result = mysql_query($sql, $cn) or 
          die(mysql_error($cn)) ;
@@ -23,21 +25,18 @@ $result = mysql_query($sql, $cn) or
     </head>
 <body>
 
+
 <table width="80%" border="1" cellpadding="1" cellspacing="1">
         <tr>
-          <th>Year</th>
-          <th>Player</th>
-          <th>Country</th>
-          <th>Par</th>
+          <th>Major</th>
+          <th>Count</th>
         <tr>
   
 <?php
           while($Datamart = mysql_fetch_assoc($result)){
-            echo "<tr>";
-              echo"<td>".$Datamart['Year']."</td>"; 
-              echo"<td>".$Datamart['Player']."</td>";
-              echo"<td>".$Datamart['Country']."</td>";
-              echo"<td>".$Datamart['Par']."</td>";
+            echo "<tr>"; 
+              echo"<td>".$Datamart['Major']."</td>";
+              echo"<td>".$Datamart['Count']."</td>"; 
             echo "</tr>";
           }
         ?>
